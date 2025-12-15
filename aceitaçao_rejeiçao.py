@@ -6,16 +6,11 @@ np.random.seed(123)
 
 def f(x):
   return 20*x*(1-x)**3
-
 k = np.linspace(0,1,1000)
 plt.plot(k,f(k), color='red')
 
-def f(x):
-  return 20*x*(1-x)**3
-
 def g(x):
   return 1
-
 
 c = 135/64
 def AR(n): #n = numero de amostras
@@ -38,3 +33,4 @@ l, aceitos, rejeitados = AR(1000)
 print("Taxa de aceitação: ", aceitos / (aceitos + rejeitados))
 print("Probabilidade de aceitação: ", 1/c)
 plt.hist(l, bins=20, density=True)
+
